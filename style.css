@@ -1,0 +1,110 @@
+body {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+width: 50%;
+ margin: 3rem auto 0 auto;
+  border: 5px double rgba(5, 5, 154, 0.839);
+  border-radius: 3rem;
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+  box-shadow: 0 0 50px 15px #48abe0;
+}
+.container h1 {
+  text-align: center;
+ 
+  color: whitesmoke;
+  opacity: 80%;
+  animation: shake 1.3s infinite ease-in-out;
+}
+
+@keyframes shake {
+    0%{
+        transform: translateX(0px);
+    }
+
+    50%{
+        transform: translateX(-20px);
+    }
+    
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
+  opacity: 90%;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+#files {
+  border-left: none;
+}
+
+input {
+  padding: 1rem;
+  border-radius: 10px;
+  background: transparent;
+  backdrop-filter: blur(20%);
+  border: 2px solid white;
+
+  width: 40%;
+  mask-image: linear-gradient(rgb(0, 0, 0), transparent);
+  cursor: pointer;
+}
+::placeholder {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.radio {
+  display: flex;
+  gap: 0.5rem;
+}
+label {
+  display: flex;
+  cursor: pointer;
+  color: white;
+}
+
+button{
+    color: whitesmoke;
+    padding: 1.2rem 2.5rem;
+    width: 50%;
+    border-radius: 40px;
+    border: none;
+    font-size: larger;
+    background-color: rgba(31, 31, 229, 0.955);
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: whitesmoke;
+    letter-spacing: 2px;
+    transition: all 1s ease;
+    font-weight: 900;
+    color:rgba(31, 31, 229, 0.955);
+}
+
+
